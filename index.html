@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/images/siteIcon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>My Image Gallery</h1>
+            <p>A collection of beautiful moments in images.</p>
+            
+            <div class="filter-buttons">
+                <button class="btn active" data-filter="all">All</button>
+                <button class="btn" data-filter="nature">Nature</button>
+                <button class="btn" data-filter="urban">Urban</button>
+                <button class="btn" data-filter="design">Wildlife</button>
+            </div>
+        </header>
+
+        <div class="gallery">
+            <div class="gallery-item" data-category="nature">
+                <img src="images/img1.jpg" alt="Nature Scene 1">
+                <div class="overlay">
+                    <div class="text">Nature Scene 1</div>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="nature">
+                <img src="images/img2.jpg" alt="Nature Scene 2">
+                <div class="overlay">
+                    <div class="text">Nature Scene 2</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="images/img3.png" alt="Nature Scene 3">
+                <div class="overlay">
+                    <div class="text">Nature Scene 3</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="urban">
+                <img src="images/img5.png" alt="Urban Life 1">
+                <div class="overlay">
+                    <div class="text">Urban Life 1</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="urban">
+                <img src="images/img4.png" alt="Urban Life 2">
+                <div class="overlay">
+                    <div class="text">Urban Life 2</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="urban">
+                <img src="images/img6.png" alt="Creative Design 1">
+                <div class="overlay">
+                    <div class="text">Urban Life 3</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="design">
+                <img src="images/img7.png" alt="Creative Design 2">
+                <div class="overlay">
+                    <div class="text">Wildlife scenery 1</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="design">
+                <img src="images/img8.png" alt="Creative Design 3">
+                <div class="overlay">
+                    <div class="text">Wildlife scenery 2</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="design">
+                <img src="images/img9.png" alt="Creative Design 4">
+                <div class="overlay">
+                    <div class="text">Wildlife scenery 3</div>
+                </div>
+            </div>
+
+  
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="caption"></div>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
